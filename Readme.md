@@ -1,4 +1,5 @@
-# Mongoid Likes [![Build Status](https://secure.travis-ci.org/stigi/mongoid_likes.png?branch=master)](http://travis-ci.org/stigi/mongoid_likes)
+# Mongoid Likes [![Build Status](https://secure.travis-ci.org/stigi/mongoid_likes.png?branch=master)](http://travis-ci.org/stigi/mongoid_likes) [![Dependency Status](https://gemnasium.com/stigi/mongoid_likes.png)](https://gemnasium.com/stigi/mongoid_likes)
+
 
 mongoid_likes allows you to easily add liking ability to you Mongoid documents.
 
