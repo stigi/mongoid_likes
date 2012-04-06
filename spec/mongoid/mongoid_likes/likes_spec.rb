@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
-describe Mongoid::Likes do
+describe Mongoid::Liker do
   describe User do
     before :all do
       @joe = User.create(name: 'Joe')
