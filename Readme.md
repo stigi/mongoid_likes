@@ -1,16 +1,15 @@
-# Mongoid Likes
+# Mongoid Likes [![Build Status](https://secure.travis-ci.org/stigi/mongoid_likes.png?branch=master)](http://travis-ci.org/stigi/mongoid_likes)
 
 mongoid_likes allows you to easily add liking ability to you Mongoid documents.
 
-[![Build Status](https://secure.travis-ci.org/stigi/mongoid_likes.png?branch=master)](http://travis-ci.org/stigi/mongoid_likes)
 
 ## Installation
 
-Add the following to your Gemfile
+Add the following to your Gemfile:
 
     gem 'mongoid_follow'
 
-If you like living on the edge (or if this gem isn't yet available on rubygems) you can add
+If you like living on the edge you can also add:
 
     gem 'mongoid_likes', :git => 'git://github.com/stigi/mongoid_likes.git', :branch => 'development'
 
@@ -63,7 +62,9 @@ Also likes are polymorphic, so let's assume you have a second class `Album` that
 
     user.all_likes_by_model(Album)
     # => [album]
-    
+
+Or even use some convenience methods:
+
     user.track_likes_count
     # => 1
 
@@ -72,7 +73,31 @@ Also likes are polymorphic, so let's assume you have a second class `Album` that
 
 You get the idea. Have a look at the specs to see some more examples.
 
-# TODOs
+
+## Inspiration
+
+Standing on the shoulders of giants:
+
+- [mongoid_follow](https://github.com/alecguintu/mongoid_follow) by [Alec Guintu](https://github.com/alecguintu)  
+    You will see that mst of my code comes from this project.
+- [mongoid_votable](https://github.com/jcoene/mongoid_voteable) by [Jason Coene](https://github.com/jcoene)  
+    Future versions shall aim to go in a similar direction as mongoid_votable.
+
+
+## TODOs
 
 - write a proper readme
 - generate some documentation
+- more tests!
+- add support for [MongoMapper](http://mongomapper.com/)
+
+
+## License (MIT)
+
+Copyright (c) 2012 Ullrich Schäfer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
