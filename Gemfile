@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-group :test do
-  gem 'rake'  
-end
+gem 'rake'
+gem 'jeweler'
+
 # Specify your gem's dependencies in mongoid_likes.gemspec
 gemspec
